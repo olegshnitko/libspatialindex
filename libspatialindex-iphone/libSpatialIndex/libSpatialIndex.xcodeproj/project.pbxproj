@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAA2221414E3F18C0027871B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA2221314E3F18C0027871B /* Foundation.framework */; };
+		CAA2227614E3F43E0027871B /* BoundsQuery.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222614E3F43E0027871B /* BoundsQuery.cc */; };
+		CAA2227714E3F43E0027871B /* CountVisitor.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222714E3F43E0027871B /* CountVisitor.cc */; };
+		CAA2227814E3F43E0027871B /* CustomStorage.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222814E3F43E0027871B /* CustomStorage.cc */; };
+		CAA2227914E3F43E0027871B /* DataStream.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222914E3F43E0027871B /* DataStream.cc */; };
+		CAA2227A14E3F43E0027871B /* Error.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222A14E3F43E0027871B /* Error.cc */; };
+		CAA2227B14E3F43E0027871B /* IdVisitor.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222B14E3F43E0027871B /* IdVisitor.cc */; };
+		CAA2227C14E3F43E0027871B /* Index.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222C14E3F43E0027871B /* Index.cc */; };
+		CAA2227D14E3F43E0027871B /* LeafQuery.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222D14E3F43E0027871B /* LeafQuery.cc */; };
+		CAA2227E14E3F43E0027871B /* ObjVisitor.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2222F14E3F43E0027871B /* ObjVisitor.cc */; };
+		CAA2227F14E3F43E0027871B /* sidx_api.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2223014E3F43E0027871B /* sidx_api.cc */; };
+		CAA2228014E3F43E0027871B /* Utility.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2223114E3F43E0027871B /* Utility.cc */; };
+		CAA2228114E3F43E0027871B /* Index.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2223614E3F43E0027871B /* Index.cc */; };
+		CAA2228214E3F43E0027871B /* Index.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2223714E3F43E0027871B /* Index.h */; };
+		CAA2228314E3F43E0027871B /* Leaf.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2223814E3F43E0027871B /* Leaf.cc */; };
+		CAA2228414E3F43E0027871B /* Leaf.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2223914E3F43E0027871B /* Leaf.h */; };
+		CAA2228514E3F43E0027871B /* MVRTree.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2223B14E3F43E0027871B /* MVRTree.cc */; };
+		CAA2228614E3F43E0027871B /* MVRTree.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2223C14E3F43E0027871B /* MVRTree.h */; };
+		CAA2228714E3F43E0027871B /* Node.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2223D14E3F43E0027871B /* Node.cc */; };
+		CAA2228814E3F43E0027871B /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2223E14E3F43E0027871B /* Node.h */; };
+		CAA2228914E3F43E0027871B /* PointerPoolNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2223F14E3F43E0027871B /* PointerPoolNode.h */; };
+		CAA2228A14E3F43E0027871B /* Statistics.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224014E3F43E0027871B /* Statistics.cc */; };
+		CAA2228B14E3F43E0027871B /* Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224114E3F43E0027871B /* Statistics.h */; };
+		CAA2228C14E3F43E0027871B /* BulkLoader.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224314E3F43E0027871B /* BulkLoader.cc */; };
+		CAA2228D14E3F43E0027871B /* BulkLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224414E3F43E0027871B /* BulkLoader.h */; };
+		CAA2228E14E3F43E0027871B /* Index.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224514E3F43E0027871B /* Index.cc */; };
+		CAA2228F14E3F43E0027871B /* Index.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224614E3F43E0027871B /* Index.h */; };
+		CAA2229014E3F43E0027871B /* Leaf.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224714E3F43E0027871B /* Leaf.cc */; };
+		CAA2229114E3F43E0027871B /* Leaf.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224814E3F43E0027871B /* Leaf.h */; };
+		CAA2229214E3F43E0027871B /* Node.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224A14E3F43E0027871B /* Node.cc */; };
+		CAA2229314E3F43E0027871B /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224B14E3F43E0027871B /* Node.h */; };
+		CAA2229414E3F43E0027871B /* PointerPoolNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224C14E3F43E0027871B /* PointerPoolNode.h */; };
+		CAA2229514E3F43E0027871B /* RTree.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224D14E3F43E0027871B /* RTree.cc */; };
+		CAA2229614E3F43E0027871B /* RTree.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2224E14E3F43E0027871B /* RTree.h */; };
+		CAA2229714E3F43E0027871B /* Statistics.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2224F14E3F43E0027871B /* Statistics.cc */; };
+		CAA2229814E3F43E0027871B /* Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2225014E3F43E0027871B /* Statistics.h */; };
+		CAA2229914E3F43E0027871B /* LineSegment.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225214E3F43E0027871B /* LineSegment.cc */; };
+		CAA2229A14E3F43E0027871B /* MovingPoint.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225414E3F43E0027871B /* MovingPoint.cc */; };
+		CAA2229B14E3F43E0027871B /* MovingRegion.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225514E3F43E0027871B /* MovingRegion.cc */; };
+		CAA2229C14E3F43E0027871B /* Point.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225614E3F43E0027871B /* Point.cc */; };
+		CAA2229D14E3F43E0027871B /* Region.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225714E3F43E0027871B /* Region.cc */; };
+		CAA2229E14E3F43E0027871B /* SpatialIndexImpl.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225814E3F43E0027871B /* SpatialIndexImpl.cc */; };
+		CAA2229F14E3F43E0027871B /* TimePoint.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225914E3F43E0027871B /* TimePoint.cc */; };
+		CAA222A014E3F43E0027871B /* TimeRegion.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225A14E3F43E0027871B /* TimeRegion.cc */; };
+		CAA222A114E3F43E0027871B /* Buffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225C14E3F43E0027871B /* Buffer.cc */; };
+		CAA222A214E3F43E0027871B /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2225D14E3F43E0027871B /* Buffer.h */; };
+		CAA222A314E3F43E0027871B /* DiskStorageManager.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2225E14E3F43E0027871B /* DiskStorageManager.cc */; };
+		CAA222A414E3F43E0027871B /* DiskStorageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2225F14E3F43E0027871B /* DiskStorageManager.h */; };
+		CAA222A514E3F43E0027871B /* MemoryStorageManager.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226114E3F43E0027871B /* MemoryStorageManager.cc */; };
+		CAA222A614E3F43E0027871B /* MemoryStorageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2226214E3F43E0027871B /* MemoryStorageManager.h */; };
+		CAA222A714E3F43E0027871B /* RandomEvictionsBuffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226314E3F43E0027871B /* RandomEvictionsBuffer.cc */; };
+		CAA222A814E3F43E0027871B /* RandomEvictionsBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2226414E3F43E0027871B /* RandomEvictionsBuffer.h */; };
+		CAA222A914E3F43E0027871B /* rand48.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226714E3F43E0027871B /* rand48.cc */; };
+		CAA222AA14E3F43E0027871B /* Tools.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226814E3F43E0027871B /* Tools.cc */; };
+		CAA222AB14E3F43E0027871B /* Index.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226A14E3F43E0027871B /* Index.cc */; };
+		CAA222AC14E3F43E0027871B /* Index.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2226B14E3F43E0027871B /* Index.h */; };
+		CAA222AD14E3F43E0027871B /* Leaf.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226C14E3F43E0027871B /* Leaf.cc */; };
+		CAA222AE14E3F43E0027871B /* Leaf.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2226D14E3F43E0027871B /* Leaf.h */; };
+		CAA222AF14E3F43E0027871B /* Node.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2226F14E3F43E0027871B /* Node.cc */; };
+		CAA222B014E3F43E0027871B /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2227014E3F43E0027871B /* Node.h */; };
+		CAA222B114E3F43E0027871B /* PointerPoolNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2227114E3F43E0027871B /* PointerPoolNode.h */; };
+		CAA222B214E3F43E0027871B /* Statistics.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2227214E3F43E0027871B /* Statistics.cc */; };
+		CAA222B314E3F43E0027871B /* Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2227314E3F43E0027871B /* Statistics.h */; };
+		CAA222B414E3F43E0027871B /* TPRTree.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2227414E3F43E0027871B /* TPRTree.cc */; };
+		CAA222B514E3F43E0027871B /* TPRTree.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2227514E3F43E0027871B /* TPRTree.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAA2221014E3F18C0027871B /* libSpatialIndex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpatialIndex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA2221314E3F18C0027871B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CAA2221714E3F18C0027871B /* libSpatialIndex-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libSpatialIndex-Prefix.pch"; sourceTree = "<group>"; };
+		CAA2222614E3F43E0027871B /* BoundsQuery.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoundsQuery.cc; sourceTree = "<group>"; };
+		CAA2222714E3F43E0027871B /* CountVisitor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CountVisitor.cc; sourceTree = "<group>"; };
+		CAA2222814E3F43E0027871B /* CustomStorage.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomStorage.cc; sourceTree = "<group>"; };
+		CAA2222914E3F43E0027871B /* DataStream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataStream.cc; sourceTree = "<group>"; };
+		CAA2222A14E3F43E0027871B /* Error.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Error.cc; sourceTree = "<group>"; };
+		CAA2222B14E3F43E0027871B /* IdVisitor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdVisitor.cc; sourceTree = "<group>"; };
+		CAA2222C14E3F43E0027871B /* Index.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Index.cc; sourceTree = "<group>"; };
+		CAA2222D14E3F43E0027871B /* LeafQuery.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LeafQuery.cc; sourceTree = "<group>"; };
+		CAA2222F14E3F43E0027871B /* ObjVisitor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjVisitor.cc; sourceTree = "<group>"; };
+		CAA2223014E3F43E0027871B /* sidx_api.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sidx_api.cc; sourceTree = "<group>"; };
+		CAA2223114E3F43E0027871B /* Utility.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cc; sourceTree = "<group>"; };
+		CAA2223614E3F43E0027871B /* Index.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Index.cc; sourceTree = "<group>"; };
+		CAA2223714E3F43E0027871B /* Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Index.h; sourceTree = "<group>"; };
+		CAA2223814E3F43E0027871B /* Leaf.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Leaf.cc; sourceTree = "<group>"; };
+		CAA2223914E3F43E0027871B /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		CAA2223B14E3F43E0027871B /* MVRTree.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MVRTree.cc; sourceTree = "<group>"; };
+		CAA2223C14E3F43E0027871B /* MVRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRTree.h; sourceTree = "<group>"; };
+		CAA2223D14E3F43E0027871B /* Node.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cc; sourceTree = "<group>"; };
+		CAA2223E14E3F43E0027871B /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		CAA2223F14E3F43E0027871B /* PointerPoolNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerPoolNode.h; sourceTree = "<group>"; };
+		CAA2224014E3F43E0027871B /* Statistics.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Statistics.cc; sourceTree = "<group>"; };
+		CAA2224114E3F43E0027871B /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
+		CAA2224314E3F43E0027871B /* BulkLoader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulkLoader.cc; sourceTree = "<group>"; };
+		CAA2224414E3F43E0027871B /* BulkLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulkLoader.h; sourceTree = "<group>"; };
+		CAA2224514E3F43E0027871B /* Index.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Index.cc; sourceTree = "<group>"; };
+		CAA2224614E3F43E0027871B /* Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Index.h; sourceTree = "<group>"; };
+		CAA2224714E3F43E0027871B /* Leaf.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Leaf.cc; sourceTree = "<group>"; };
+		CAA2224814E3F43E0027871B /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		CAA2224A14E3F43E0027871B /* Node.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cc; sourceTree = "<group>"; };
+		CAA2224B14E3F43E0027871B /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		CAA2224C14E3F43E0027871B /* PointerPoolNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerPoolNode.h; sourceTree = "<group>"; };
+		CAA2224D14E3F43E0027871B /* RTree.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTree.cc; sourceTree = "<group>"; };
+		CAA2224E14E3F43E0027871B /* RTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTree.h; sourceTree = "<group>"; };
+		CAA2224F14E3F43E0027871B /* Statistics.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Statistics.cc; sourceTree = "<group>"; };
+		CAA2225014E3F43E0027871B /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
+		CAA2225214E3F43E0027871B /* LineSegment.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LineSegment.cc; sourceTree = "<group>"; };
+		CAA2225414E3F43E0027871B /* MovingPoint.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingPoint.cc; sourceTree = "<group>"; };
+		CAA2225514E3F43E0027871B /* MovingRegion.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingRegion.cc; sourceTree = "<group>"; };
+		CAA2225614E3F43E0027871B /* Point.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cc; sourceTree = "<group>"; };
+		CAA2225714E3F43E0027871B /* Region.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Region.cc; sourceTree = "<group>"; };
+		CAA2225814E3F43E0027871B /* SpatialIndexImpl.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpatialIndexImpl.cc; sourceTree = "<group>"; };
+		CAA2225914E3F43E0027871B /* TimePoint.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimePoint.cc; sourceTree = "<group>"; };
+		CAA2225A14E3F43E0027871B /* TimeRegion.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeRegion.cc; sourceTree = "<group>"; };
+		CAA2225C14E3F43E0027871B /* Buffer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cc; sourceTree = "<group>"; };
+		CAA2225D14E3F43E0027871B /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
+		CAA2225E14E3F43E0027871B /* DiskStorageManager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiskStorageManager.cc; sourceTree = "<group>"; };
+		CAA2225F14E3F43E0027871B /* DiskStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskStorageManager.h; sourceTree = "<group>"; };
+		CAA2226114E3F43E0027871B /* MemoryStorageManager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryStorageManager.cc; sourceTree = "<group>"; };
+		CAA2226214E3F43E0027871B /* MemoryStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryStorageManager.h; sourceTree = "<group>"; };
+		CAA2226314E3F43E0027871B /* RandomEvictionsBuffer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomEvictionsBuffer.cc; sourceTree = "<group>"; };
+		CAA2226414E3F43E0027871B /* RandomEvictionsBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomEvictionsBuffer.h; sourceTree = "<group>"; };
+		CAA2226714E3F43E0027871B /* rand48.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rand48.cc; sourceTree = "<group>"; };
+		CAA2226814E3F43E0027871B /* Tools.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cc; sourceTree = "<group>"; };
+		CAA2226A14E3F43E0027871B /* Index.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Index.cc; sourceTree = "<group>"; };
+		CAA2226B14E3F43E0027871B /* Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Index.h; sourceTree = "<group>"; };
+		CAA2226C14E3F43E0027871B /* Leaf.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Leaf.cc; sourceTree = "<group>"; };
+		CAA2226D14E3F43E0027871B /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		CAA2226F14E3F43E0027871B /* Node.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cc; sourceTree = "<group>"; };
+		CAA2227014E3F43E0027871B /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		CAA2227114E3F43E0027871B /* PointerPoolNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerPoolNode.h; sourceTree = "<group>"; };
+		CAA2227214E3F43E0027871B /* Statistics.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Statistics.cc; sourceTree = "<group>"; };
+		CAA2227314E3F43E0027871B /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
+		CAA2227414E3F43E0027871B /* TPRTree.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TPRTree.cc; sourceTree = "<group>"; };
+		CAA2227514E3F43E0027871B /* TPRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRTree.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAA2220D14E3F18C0027871B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA2221414E3F18C0027871B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAA2220514E3F18C0027871B = {
+			isa = PBXGroup;
+			children = (
+				CAA2221514E3F18C0027871B /* libSpatialIndex */,
+				CAA2221214E3F18C0027871B /* Frameworks */,
+				CAA2221114E3F18C0027871B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAA2221114E3F18C0027871B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2221014E3F18C0027871B /* libSpatialIndex.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAA2221214E3F18C0027871B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2221314E3F18C0027871B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA2221514E3F18C0027871B /* libSpatialIndex */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2222414E3F43E0027871B /* src */,
+				CAA2221614E3F18C0027871B /* Supporting Files */,
+			);
+			path = libSpatialIndex;
+			sourceTree = "<group>";
+		};
+		CAA2221614E3F18C0027871B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2221714E3F18C0027871B /* libSpatialIndex-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAA2222414E3F43E0027871B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2222514E3F43E0027871B /* capi */,
+				CAA2223514E3F43E0027871B /* mvrtree */,
+				CAA2224214E3F43E0027871B /* rtree */,
+				CAA2225114E3F43E0027871B /* spatialindex */,
+				CAA2225B14E3F43E0027871B /* storagemanager */,
+				CAA2226514E3F43E0027871B /* tools */,
+				CAA2226914E3F43E0027871B /* tprtree */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+		CAA2222514E3F43E0027871B /* capi */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2222614E3F43E0027871B /* BoundsQuery.cc */,
+				CAA2222714E3F43E0027871B /* CountVisitor.cc */,
+				CAA2222814E3F43E0027871B /* CustomStorage.cc */,
+				CAA2222914E3F43E0027871B /* DataStream.cc */,
+				CAA2222A14E3F43E0027871B /* Error.cc */,
+				CAA2222B14E3F43E0027871B /* IdVisitor.cc */,
+				CAA2222C14E3F43E0027871B /* Index.cc */,
+				CAA2222D14E3F43E0027871B /* LeafQuery.cc */,
+				CAA2222F14E3F43E0027871B /* ObjVisitor.cc */,
+				CAA2223014E3F43E0027871B /* sidx_api.cc */,
+				CAA2223114E3F43E0027871B /* Utility.cc */,
+			);
+			path = capi;
+			sourceTree = "<group>";
+		};
+		CAA2223514E3F43E0027871B /* mvrtree */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2223614E3F43E0027871B /* Index.cc */,
+				CAA2223714E3F43E0027871B /* Index.h */,
+				CAA2223814E3F43E0027871B /* Leaf.cc */,
+				CAA2223914E3F43E0027871B /* Leaf.h */,
+				CAA2223B14E3F43E0027871B /* MVRTree.cc */,
+				CAA2223C14E3F43E0027871B /* MVRTree.h */,
+				CAA2223D14E3F43E0027871B /* Node.cc */,
+				CAA2223E14E3F43E0027871B /* Node.h */,
+				CAA2223F14E3F43E0027871B /* PointerPoolNode.h */,
+				CAA2224014E3F43E0027871B /* Statistics.cc */,
+				CAA2224114E3F43E0027871B /* Statistics.h */,
+			);
+			path = mvrtree;
+			sourceTree = "<group>";
+		};
+		CAA2224214E3F43E0027871B /* rtree */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2224314E3F43E0027871B /* BulkLoader.cc */,
+				CAA2224414E3F43E0027871B /* BulkLoader.h */,
+				CAA2224514E3F43E0027871B /* Index.cc */,
+				CAA2224614E3F43E0027871B /* Index.h */,
+				CAA2224714E3F43E0027871B /* Leaf.cc */,
+				CAA2224814E3F43E0027871B /* Leaf.h */,
+				CAA2224A14E3F43E0027871B /* Node.cc */,
+				CAA2224B14E3F43E0027871B /* Node.h */,
+				CAA2224C14E3F43E0027871B /* PointerPoolNode.h */,
+				CAA2224D14E3F43E0027871B /* RTree.cc */,
+				CAA2224E14E3F43E0027871B /* RTree.h */,
+				CAA2224F14E3F43E0027871B /* Statistics.cc */,
+				CAA2225014E3F43E0027871B /* Statistics.h */,
+			);
+			path = rtree;
+			sourceTree = "<group>";
+		};
+		CAA2225114E3F43E0027871B /* spatialindex */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2225214E3F43E0027871B /* LineSegment.cc */,
+				CAA2225414E3F43E0027871B /* MovingPoint.cc */,
+				CAA2225514E3F43E0027871B /* MovingRegion.cc */,
+				CAA2225614E3F43E0027871B /* Point.cc */,
+				CAA2225714E3F43E0027871B /* Region.cc */,
+				CAA2225814E3F43E0027871B /* SpatialIndexImpl.cc */,
+				CAA2225914E3F43E0027871B /* TimePoint.cc */,
+				CAA2225A14E3F43E0027871B /* TimeRegion.cc */,
+			);
+			path = spatialindex;
+			sourceTree = "<group>";
+		};
+		CAA2225B14E3F43E0027871B /* storagemanager */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2225C14E3F43E0027871B /* Buffer.cc */,
+				CAA2225D14E3F43E0027871B /* Buffer.h */,
+				CAA2225E14E3F43E0027871B /* DiskStorageManager.cc */,
+				CAA2225F14E3F43E0027871B /* DiskStorageManager.h */,
+				CAA2226114E3F43E0027871B /* MemoryStorageManager.cc */,
+				CAA2226214E3F43E0027871B /* MemoryStorageManager.h */,
+				CAA2226314E3F43E0027871B /* RandomEvictionsBuffer.cc */,
+				CAA2226414E3F43E0027871B /* RandomEvictionsBuffer.h */,
+			);
+			path = storagemanager;
+			sourceTree = "<group>";
+		};
+		CAA2226514E3F43E0027871B /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2226714E3F43E0027871B /* rand48.cc */,
+				CAA2226814E3F43E0027871B /* Tools.cc */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		CAA2226914E3F43E0027871B /* tprtree */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2226A14E3F43E0027871B /* Index.cc */,
+				CAA2226B14E3F43E0027871B /* Index.h */,
+				CAA2226C14E3F43E0027871B /* Leaf.cc */,
+				CAA2226D14E3F43E0027871B /* Leaf.h */,
+				CAA2226F14E3F43E0027871B /* Node.cc */,
+				CAA2227014E3F43E0027871B /* Node.h */,
+				CAA2227114E3F43E0027871B /* PointerPoolNode.h */,
+				CAA2227214E3F43E0027871B /* Statistics.cc */,
+				CAA2227314E3F43E0027871B /* Statistics.h */,
+				CAA2227414E3F43E0027871B /* TPRTree.cc */,
+				CAA2227514E3F43E0027871B /* TPRTree.h */,
+			);
+			path = tprtree;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CAA2220E14E3F18C0027871B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA2228214E3F43E0027871B /* Index.h in Headers */,
+				CAA2228414E3F43E0027871B /* Leaf.h in Headers */,
+				CAA2228614E3F43E0027871B /* MVRTree.h in Headers */,
+				CAA2228814E3F43E0027871B /* Node.h in Headers */,
+				CAA2228914E3F43E0027871B /* PointerPoolNode.h in Headers */,
+				CAA2228B14E3F43E0027871B /* Statistics.h in Headers */,
+				CAA2228D14E3F43E0027871B /* BulkLoader.h in Headers */,
+				CAA2228F14E3F43E0027871B /* Index.h in Headers */,
+				CAA2229114E3F43E0027871B /* Leaf.h in Headers */,
+				CAA2229314E3F43E0027871B /* Node.h in Headers */,
+				CAA2229414E3F43E0027871B /* PointerPoolNode.h in Headers */,
+				CAA2229614E3F43E0027871B /* RTree.h in Headers */,
+				CAA2229814E3F43E0027871B /* Statistics.h in Headers */,
+				CAA222A214E3F43E0027871B /* Buffer.h in Headers */,
+				CAA222A414E3F43E0027871B /* DiskStorageManager.h in Headers */,
+				CAA222A614E3F43E0027871B /* MemoryStorageManager.h in Headers */,
+				CAA222A814E3F43E0027871B /* RandomEvictionsBuffer.h in Headers */,
+				CAA222AC14E3F43E0027871B /* Index.h in Headers */,
+				CAA222AE14E3F43E0027871B /* Leaf.h in Headers */,
+				CAA222B014E3F43E0027871B /* Node.h in Headers */,
+				CAA222B114E3F43E0027871B /* PointerPoolNode.h in Headers */,
+				CAA222B314E3F43E0027871B /* Statistics.h in Headers */,
+				CAA222B514E3F43E0027871B /* TPRTree.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CAA2220F14E3F18C0027871B /* libSpatialIndex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA2221D14E3F18C0027871B /* Build configuration list for PBXNativeTarget "libSpatialIndex" */;
+			buildPhases = (
+				CAA2220C14E3F18C0027871B /* Sources */,
+				CAA2220D14E3F18C0027871B /* Frameworks */,
+				CAA2220E14E3F18C0027871B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libSpatialIndex;
+			productName = libSpatialIndex;
+			productReference = CAA2221014E3F18C0027871B /* libSpatialIndex.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAA2220714E3F18C0027871B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CAA2220A14E3F18C0027871B /* Build configuration list for PBXProject "libSpatialIndex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CAA2220514E3F18C0027871B;
+			productRefGroup = CAA2221114E3F18C0027871B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAA2220F14E3F18C0027871B /* libSpatialIndex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAA2220C14E3F18C0027871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA2227614E3F43E0027871B /* BoundsQuery.cc in Sources */,
+				CAA2227714E3F43E0027871B /* CountVisitor.cc in Sources */,
+				CAA2227814E3F43E0027871B /* CustomStorage.cc in Sources */,
+				CAA2227914E3F43E0027871B /* DataStream.cc in Sources */,
+				CAA2227A14E3F43E0027871B /* Error.cc in Sources */,
+				CAA2227B14E3F43E0027871B /* IdVisitor.cc in Sources */,
+				CAA2227C14E3F43E0027871B /* Index.cc in Sources */,
+				CAA2227D14E3F43E0027871B /* LeafQuery.cc in Sources */,
+				CAA2227E14E3F43E0027871B /* ObjVisitor.cc in Sources */,
+				CAA2227F14E3F43E0027871B /* sidx_api.cc in Sources */,
+				CAA2228014E3F43E0027871B /* Utility.cc in Sources */,
+				CAA2228114E3F43E0027871B /* Index.cc in Sources */,
+				CAA2228314E3F43E0027871B /* Leaf.cc in Sources */,
+				CAA2228514E3F43E0027871B /* MVRTree.cc in Sources */,
+				CAA2228714E3F43E0027871B /* Node.cc in Sources */,
+				CAA2228A14E3F43E0027871B /* Statistics.cc in Sources */,
+				CAA2228C14E3F43E0027871B /* BulkLoader.cc in Sources */,
+				CAA2228E14E3F43E0027871B /* Index.cc in Sources */,
+				CAA2229014E3F43E0027871B /* Leaf.cc in Sources */,
+				CAA2229214E3F43E0027871B /* Node.cc in Sources */,
+				CAA2229514E3F43E0027871B /* RTree.cc in Sources */,
+				CAA2229714E3F43E0027871B /* Statistics.cc in Sources */,
+				CAA2229914E3F43E0027871B /* LineSegment.cc in Sources */,
+				CAA2229A14E3F43E0027871B /* MovingPoint.cc in Sources */,
+				CAA2229B14E3F43E0027871B /* MovingRegion.cc in Sources */,
+				CAA2229C14E3F43E0027871B /* Point.cc in Sources */,
+				CAA2229D14E3F43E0027871B /* Region.cc in Sources */,
+				CAA2229E14E3F43E0027871B /* SpatialIndexImpl.cc in Sources */,
+				CAA2229F14E3F43E0027871B /* TimePoint.cc in Sources */,
+				CAA222A014E3F43E0027871B /* TimeRegion.cc in Sources */,
+				CAA222A114E3F43E0027871B /* Buffer.cc in Sources */,
+				CAA222A314E3F43E0027871B /* DiskStorageManager.cc in Sources */,
+				CAA222A514E3F43E0027871B /* MemoryStorageManager.cc in Sources */,
+				CAA222A714E3F43E0027871B /* RandomEvictionsBuffer.cc in Sources */,
+				CAA222A914E3F43E0027871B /* rand48.cc in Sources */,
+				CAA222AA14E3F43E0027871B /* Tools.cc in Sources */,
+				CAA222AB14E3F43E0027871B /* Index.cc in Sources */,
+				CAA222AD14E3F43E0027871B /* Leaf.cc in Sources */,
+				CAA222AF14E3F43E0027871B /* Node.cc in Sources */,
+				CAA222B214E3F43E0027871B /* Statistics.cc in Sources */,
+				CAA222B414E3F43E0027871B /* TPRTree.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAA2221B14E3F18C0027871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAA2221C14E3F18C0027871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAA2221E14E3F18C0027871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libSpatialIndex.dst;
+				EXECUTABLE_PREFIX = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libSpatialIndex/libSpatialIndex-Prefix.pch";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../include;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CAA2221F14E3F18C0027871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libSpatialIndex.dst;
+				EXECUTABLE_PREFIX = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libSpatialIndex/libSpatialIndex-Prefix.pch";
+				HEADER_SEARCH_PATHS = $SRCROOT/../../include;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAA2220A14E3F18C0027871B /* Build configuration list for PBXProject "libSpatialIndex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA2221B14E3F18C0027871B /* Debug */,
+				CAA2221C14E3F18C0027871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA2221D14E3F18C0027871B /* Build configuration list for PBXNativeTarget "libSpatialIndex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA2221E14E3F18C0027871B /* Debug */,
+				CAA2221F14E3F18C0027871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAA2220714E3F18C0027871B /* Project object */;
+}
