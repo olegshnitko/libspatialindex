@@ -72,6 +72,7 @@
 		CAA222B314E3F43E0027871B /* Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2227314E3F43E0027871B /* Statistics.h */; };
 		CAA222B414E3F43E0027871B /* TPRTree.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAA2227414E3F43E0027871B /* TPRTree.cc */; };
 		CAA222B514E3F43E0027871B /* TPRTree.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2227514E3F43E0027871B /* TPRTree.h */; };
+		CAA2233914E3FB100027871B /* spatialindex in Headers */ = {isa = PBXBuildFile; fileRef = CAA2233814E3FB090027871B /* spatialindex */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,10 @@
 		CAA2227314E3F43E0027871B /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
 		CAA2227414E3F43E0027871B /* TPRTree.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TPRTree.cc; sourceTree = "<group>"; };
 		CAA2227514E3F43E0027871B /* TPRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRTree.h; sourceTree = "<group>"; };
+		CAA2233814E3FB090027871B /* spatialindex */ = {isa = PBXFileReference; lastKnownFileType = folder; path = spatialindex; sourceTree = "<group>"; };
+		CAA2233A14E3FB940027871B /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYING; path = ../../../COPYING; sourceTree = "<group>"; };
+		CAA2233B14E3FB9E0027871B /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AUTHORS; path = ../../../AUTHORS; sourceTree = "<group>"; };
+		CAA2233C14E3FBAB0027871B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ../../../README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +189,12 @@
 		CAA2221514E3F18C0027871B /* libSpatialIndex */ = {
 			isa = PBXGroup;
 			children = (
+				CAA222F714E3FAD30027871B /* include */,
 				CAA2222414E3F43E0027871B /* src */,
 				CAA2221614E3F18C0027871B /* Supporting Files */,
+				CAA2233C14E3FBAB0027871B /* README */,
+				CAA2233B14E3FB9E0027871B /* AUTHORS */,
+				CAA2233A14E3FB940027871B /* COPYING */,
 			);
 			path = libSpatialIndex;
 			sourceTree = "<group>";
@@ -326,6 +335,15 @@
 			path = tprtree;
 			sourceTree = "<group>";
 		};
+		CAA222F714E3FAD30027871B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2233814E3FB090027871B /* spatialindex */,
+			);
+			name = include;
+			path = ../../../include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -333,6 +351,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA2233914E3FB100027871B /* spatialindex in Headers */,
 				CAA2228214E3F43E0027871B /* Index.h in Headers */,
 				CAA2228414E3F43E0027871B /* Leaf.h in Headers */,
 				CAA2228614E3F43E0027871B /* MVRTree.h in Headers */,
@@ -503,9 +522,11 @@
 				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libSpatialIndex/libSpatialIndex-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				HEADER_SEARCH_PATHS = $SRCROOT/../../include;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -517,9 +538,11 @@
 				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libSpatialIndex/libSpatialIndex-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				HEADER_SEARCH_PATHS = $SRCROOT/../../include;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
