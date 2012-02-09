@@ -94,7 +94,7 @@ Point* Point::clone()
 //
 // ISerializable interface
 //
-uint32_t Point::getByteArraySize()
+uint32_t Point::getByteArraySize() const
 {
 	return (sizeof(uint32_t) + m_dimension * sizeof(double));
 }
@@ -110,7 +110,7 @@ void Point::loadFromByteArray(const byte* ptr)
 	//ptr += m_dimension * sizeof(double);
 }
 
-void Point::storeToByteArray(byte** data, uint32_t& len)
+void Point::storeToByteArray(byte** data, uint32_t& len) const
 {
 	len = getByteArraySize();
 	*data = new byte[len];

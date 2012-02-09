@@ -210,10 +210,10 @@ void Tools::PropertySet::loadFromByteArray(const byte* ptr)
 	}
 }
 
-uint32_t Tools::PropertySet::getByteArraySize()
+uint32_t Tools::PropertySet::getByteArraySize() const
 {
 	uint32_t size = sizeof(uint32_t);
-	std::map<std::string, Variant>::iterator it;
+	std::map<std::string, Variant>::const_iterator it;
 
 	for (it = m_propertySet.begin(); it != m_propertySet.end(); ++it)
 	{
@@ -263,7 +263,7 @@ uint32_t Tools::PropertySet::getByteArraySize()
 	return size;
 }
 
-void Tools::PropertySet::storeToByteArray(byte** data, uint32_t& length)
+void Tools::PropertySet::storeToByteArray(byte** data, uint32_t& length) const
 {
 	length = getByteArraySize();
 	*data = new byte[length];
@@ -273,7 +273,7 @@ void Tools::PropertySet::storeToByteArray(byte** data, uint32_t& length)
 	memcpy(ptr, &numberOfProperties, sizeof(uint32_t));
 	ptr += sizeof(uint32_t);
 
-	std::map<std::string, Variant>::iterator it;
+	std::map<std::string, Variant>::const_iterator it;
 
 	for (it = m_propertySet.begin(); it != m_propertySet.end(); ++it)
 	{

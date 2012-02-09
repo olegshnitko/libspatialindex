@@ -108,7 +108,7 @@ TimePoint* TimePoint::clone()
 //
 // ISerializable interface
 //
-uint32_t TimePoint::getByteArraySize()
+uint32_t TimePoint::getByteArraySize() const
 {
 	return (sizeof(uint32_t) + 2 * sizeof(double) + m_dimension * sizeof(double));
 }
@@ -128,7 +128,7 @@ void TimePoint::loadFromByteArray(const byte* ptr)
 	//ptr += m_dimension * sizeof(double);
 }
 
-void TimePoint::storeToByteArray(byte** data, uint32_t& len)
+void TimePoint::storeToByteArray(byte** data, uint32_t& len) const
 {
 	len = getByteArraySize();
 	*data = new byte[len];

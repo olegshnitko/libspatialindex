@@ -75,7 +75,7 @@ void SpatialIndex::RTree::Data::getData(uint32_t& len, byte** data) const
 	}
 }
 
-uint32_t SpatialIndex::RTree::Data::getByteArraySize()
+uint32_t SpatialIndex::RTree::Data::getByteArraySize() const
 {
 	return
 		sizeof(id_type) +
@@ -105,7 +105,7 @@ void SpatialIndex::RTree::Data::loadFromByteArray(const byte* ptr)
 	m_region.loadFromByteArray(ptr);
 }
 
-void SpatialIndex::RTree::Data::storeToByteArray(byte** data, uint32_t& len)
+void SpatialIndex::RTree::Data::storeToByteArray(byte** data, uint32_t& len) const
 {
 	// it is thread safe this way.
 	uint32_t regionsize;

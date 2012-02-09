@@ -44,7 +44,7 @@ Tools::IObject* Node::clone()
 //
 // Tools::ISerializable interface
 //
-uint32_t Node::getByteArraySize()
+uint32_t Node::getByteArraySize() const
 {
 	return
 		(sizeof(uint32_t) +
@@ -115,7 +115,7 @@ void Node::loadFromByteArray(const byte* ptr)
 	//ptr += m_pTree->m_dimension * sizeof(double);
 }
 
-void Node::storeToByteArray(byte** data, uint32_t& len)
+void Node::storeToByteArray(byte** data, uint32_t& len) const
 {
 	len = getByteArraySize();
 

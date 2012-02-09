@@ -220,11 +220,11 @@ namespace Tools
 	public:
 		virtual ~ISerializable() {}
 
-		virtual uint32_t getByteArraySize() = 0;
+		virtual uint32_t getByteArraySize() const = 0;
 			// returns the size of the required byte array.
 		virtual void loadFromByteArray(const byte* data) = 0;
 			// load this object using the byte array.
-		virtual void storeToByteArray(byte** data, uint32_t& length) = 0;
+		virtual void storeToByteArray(byte** data, uint32_t& length) const = 0;
 			// store this object in the byte array.
 	};
 
@@ -308,9 +308,9 @@ namespace Tools
 		void setProperty(std::string property, Variant& v);
 		void removeProperty(std::string property);
 
-		virtual uint32_t getByteArraySize();
+		virtual uint32_t getByteArraySize() const;
 		virtual void loadFromByteArray(const byte* data);
-		virtual void storeToByteArray(byte** data, uint32_t& length);
+		virtual void storeToByteArray(byte** data, uint32_t& length) const;
 
 	private:
 		std::map<std::string, Variant> m_propertySet;

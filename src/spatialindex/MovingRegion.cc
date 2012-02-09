@@ -1020,7 +1020,7 @@ MovingRegion* MovingRegion::clone()
 //
 // ISerializable interface
 //
-uint32_t MovingRegion::getByteArraySize()
+uint32_t MovingRegion::getByteArraySize() const
 {
 	return (sizeof(uint32_t) + 2 * sizeof(double) + 4 * m_dimension * sizeof(double));
 }
@@ -1047,7 +1047,7 @@ void MovingRegion::loadFromByteArray(const byte* ptr)
 	//ptr += m_dimension * sizeof(double);
 }
 
-void MovingRegion::storeToByteArray(byte** data, uint32_t& len)
+void MovingRegion::storeToByteArray(byte** data, uint32_t& len) const
 {
 	len = getByteArraySize();
 	*data = new byte[len];

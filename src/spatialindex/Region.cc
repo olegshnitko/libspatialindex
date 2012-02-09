@@ -136,7 +136,7 @@ Region* Region::clone()
 //
 // ISerializable interface
 //
-uint32_t Region::getByteArraySize()
+uint32_t Region::getByteArraySize() const
 {
 	return (sizeof(uint32_t) + 2 * m_dimension * sizeof(double));
 }
@@ -154,7 +154,7 @@ void Region::loadFromByteArray(const byte* ptr)
 	//ptr += m_dimension * sizeof(double);
 }
 
-void Region::storeToByteArray(byte** data, uint32_t& len)
+void Region::storeToByteArray(byte** data, uint32_t& len) const
 {
 	len = getByteArraySize();
 	*data = new byte[len];

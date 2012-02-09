@@ -54,9 +54,9 @@ namespace SpatialIndex
 			virtual id_type getIdentifier() const;
 			virtual void getShape(IShape** out) const;
 			virtual void getData(uint32_t& len, byte** data) const;
-			virtual uint32_t getByteArraySize();
+			virtual uint32_t getByteArraySize() const;
 			virtual void loadFromByteArray(const byte* data);
-			virtual void storeToByteArray(byte** data, uint32_t& len);
+			virtual void storeToByteArray(byte** data, uint32_t& len) const;
 
 			id_type m_id;
 			TimeRegion m_region;

@@ -43,9 +43,9 @@ namespace SpatialIndex
 		//
 		// ISerializable interface
 		//
-		virtual uint32_t getByteArraySize();
+		virtual uint32_t getByteArraySize() const;
 		virtual void loadFromByteArray(const byte* data);
-		virtual void storeToByteArray(byte** data, uint32_t& length);
+		virtual void storeToByteArray(byte** data, uint32_t& length) const;
 
 		//
 		// IShape interface

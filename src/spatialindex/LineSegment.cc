@@ -120,7 +120,7 @@ LineSegment* LineSegment::clone()
 //
 // ISerializable interface
 //
-uint32_t LineSegment::getByteArraySize()
+uint32_t LineSegment::getByteArraySize() const
 {
 	return (sizeof(uint32_t) + m_dimension * sizeof(double) * 2);
 }
@@ -138,7 +138,7 @@ void LineSegment::loadFromByteArray(const byte* ptr)
 	//ptr += m_dimension * sizeof(double);
 }
 
-void LineSegment::storeToByteArray(byte** data, uint32_t& len)
+void LineSegment::storeToByteArray(byte** data, uint32_t& len) const
 {
 	len = getByteArraySize();
 	*data = new byte[len];
@@ -157,9 +157,13 @@ void LineSegment::storeToByteArray(byte** data, uint32_t& len)
 //
 bool LineSegment::intersectsShape(const IShape& s) const
 {
-	throw Tools::IllegalStateException(
+	/*throw Tools::IllegalStateException(
 		"LineSegment::intersectsShape: Not implemented yet!"
-	);
+	);*/
+    
+    Region region;
+    getMBR(region);
+    return region.intersectsShape(s);
 }
 
 bool LineSegment::containsShape(const IShape& s) const
